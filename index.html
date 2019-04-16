@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <div class="heading">
@@ -40,13 +41,13 @@
             </div>
         </div> -->
         <div class="highlightProjects">
-            <div class="project">
+            <div class="project" onclick="showModal()">
                 Project 1
             </div>
-            <div class="project">
+            <div class="project" onclick="showModal()">
                 Project 2
             </div>
-            <div class="project">
+            <div class="project" onclick="showModal()">
                 Project 3
             </div>
         </div>
@@ -60,7 +61,12 @@
         </div>
         <div class="footing">
             <div class=footingText>
-                (c) Jacob Baldwin, 2019
+                &copy Jacob Baldwin, 2019
+            </div>
+        </div>
+        <div class="floatingBox" id="floatingBox">
+            <div class="floatingBoxContent" onclick="hideModal()">
+                Click anywhere in box to close...
             </div>
         </div>
     </body>
