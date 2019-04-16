@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+.heading {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(134, 134, 134, .95);
+    position: fixed;
+    display: flex;
+}
+.heading .nameplate {
+    height: 100%;
+    width: 50%;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+.heading .links {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading .links .headerLink {
+    width: 50%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading .links .headerLink .linkText {
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+.super {
+    height: 630px;
+    width: 100%;
+    padding-top: 70px;
+    background-image: url('backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.super .whyStatement {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.super .whyStatement .statement {
+    width: 70%;
+    font-size: 40px;
+    text-align: center;
+    color: lightgray;
+    text-shadow: 0 0 3px black;
+}
+.super .contactBtn {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.super .contactBtn .button {
+    height: 70px;
+    width: 200px;
+    background-color: rgb(134, 134, 134, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+/* .highlightProjectsIntro {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlightProjectIntro .introText {
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+} */
+.highlightProjects {
+    height: 300px;
+    width: 100%;
+    /* background-color: lightgray; */
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlightProjects .project {
+    height: 80px;
+    width: 160px;
+    margin: 25px;
+    background-color: rgb(93, 144, 161, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+.passionStatement {
+    height: 600px;
+    width: 100%;
+    max-width: 1080px;
+    /* background-color: lightgray; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.passionStatement .statement {
+    width: 70%;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+.footing {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(134, 134, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
