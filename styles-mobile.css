@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
-@media only screen and (max-width: 450px){
+@media (max-width: 450px){
 
     .heading .links .headerLink .linkText {
         font-size: 45px;
