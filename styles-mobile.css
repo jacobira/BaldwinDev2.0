@@ -1,14 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Didact+Gothic&display=swap');
 
-@media (max-width: 450px){
+@media (max-width: 650px){
+
+    .heading .nameplate {
+        font-size: 25px;
+    }
 
     .heading .links .headerLink .linkText {
-        font-size: 45px;
+        font-size: 25px;
+    }
+
+    .super .whyStatement .statement {
+        font-size: 30px;
     }
 
     .super .contactBtn .button {
-        height: 140px;
-        width: 400px;
+        font-size: 40px;
+    }
+}
+@media (max-width: 550px){
+
+    .heading .nameplate {
+        font-size: 20px;
+    }
+
+    .heading .links .headerLink .linkText {
+        font-size: 20px;
+    }
+
+    .super .whyStatement .statement {
+        font-size: 20px;
+    }
+
+    .super .contactBtn .button {
         font-size: 40px;
     }
 }

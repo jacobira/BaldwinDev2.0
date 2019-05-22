@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Didact+Gothic&display=swap');
+
+@media (max-width: 1050px){
+
+    .heading .nameplate {
+        font-size: 40px;
+    }
+
+    .heading .links .headerLink .linkText {
+        font-size: 30px;
+    }
+
+    .super .whyStatement .statement {
+        width: 70%;
+        font-size: 35px;
+    }
+
+    .super .contactBtn .button {
+        font-size: 40px;
+    }
+}
+@media (max-width: 865px){
+    .heading .nameplate {
+        font-size: 30px;
+    }
+}
