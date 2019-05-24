@@ -49,33 +49,35 @@
         transition: .2s;
     }
     .heading .links .headerLink .linkText:hover {
-        font-size: 45px;
+        font-size: 42px;
         transition: .2s;
     }
     .super {
-        height: 630px;
+        height: 730px;
         width: 100%;
         padding-top: 70px;
         background-image: url('backdrop.jpg');
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
     }
     .super .whyStatement {
-        height: 60%;
+        height: 70%;
         width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
     .super .whyStatement .statement {
         width: 50%;
-        font-size: 30px;
+        max-width: 900px;
+        font-size: 50px;
         text-align: center;
         color: lightgray;
         text-shadow: 0 0 3px black;
     }
     .super .contactBtn {
-        height: 40%;
+        height: 30%;
         width: 100%;
         font-size: 30px;
         display: flex;
@@ -92,6 +94,11 @@
         color: white;
         text-shadow: 0 0 3px black;
         cursor: pointer;
+        transition: .2s;
+    }
+    .super .contactBtn .button:hover {
+        transform: scale(1.1);
+        background-color: rgb(134,134,134, .85);
     }
     /* .highlightProjectsIntro {
         width: 100%;
@@ -127,6 +134,11 @@
         color: white;
         text-shadow: 0 0 3px black;
         cursor: pointer;
+        transition: .2s;
+    }
+    .highlightProjects .project:hover {
+        transform: scale(1.1);
+        background-color: rgba(49, 89, 102, 0.7);
     }
     .passionStatement {
         height: 600px;
@@ -143,8 +155,7 @@
         margin-top: 50px;
         font-size: 30px;
         text-align: center;
-        color: white;
-        text-shadow: 0 0 3px black;
+        color: black;
     }
     .footing {
         height: 70px;
@@ -154,6 +165,7 @@
         justify-content: center;
         align-items: center;
         font-family: 'Times New Roman', Times, serif;
+        color: white;
     }
     .floatingBox {
         transition-duration: .5s;
