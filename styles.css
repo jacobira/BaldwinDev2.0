@@ -123,11 +123,18 @@
         justify-content: center;
         align-items: center;
     }
-    .highlightProjects .project {
-        height: 80px;
+    .highlightProjects .stackBox {
+        height: 150px;
+        width: 100%;
+        max-width: 1080px;
+        display: flex;
+        justify-content: center;
+    }
+    .highlightProjects .stackBox .project {
+        height: 150px;
         width: 160px;
-        margin: 25px;
-        background-color: rgb(93, 144, 161, .7);
+        position: relative;
+        background-color: rgb(93, 144, 161);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -135,10 +142,11 @@
         text-shadow: 0 0 3px black;
         cursor: pointer;
         transition: .2s;
+        box-shadow: 2px 2px 5px black;
     }
-    .highlightProjects .project:hover {
+    .highlightProjects .stackBox .project:hover {
         transform: scale(1.1);
-        background-color: rgba(49, 89, 102, 0.7);
+        background-color: rgba(49, 89, 102);
     }
     .passionStatement {
         height: 600px;
