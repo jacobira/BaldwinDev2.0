@@ -43,7 +43,7 @@ function createPortfolioStack(){
     for(let i=0; i<portfolio.length; i++){
         let projectId = portfolio[i].id;
         $('#stackBox').append(`
-            <div class="project" id=${projectId}>
+            <div class="project" id=${projectId} onmouseover="toTopOfStack('${projectId}')">
                 ${portfolio[i].name}
             </div>
         `);
@@ -89,8 +89,18 @@ function createPortfolioStack(){
     }
     // $('#stackBox').css('margin-left', `calc(50%/${portfolio.length}`);
 }
-function toTopOfStack(){
-
+function toTopOfStack(boxId){
+    for (let i = 0; i < portfolio.length; i++){
+        if (portfolio[i].id === boxId){
+            $('#' + portfolio[i].id + '').css('z-index', `${portfolio.length}px`);
+            for (let a = i; a < portfolio.length; a++){
+                $('#' + portfolio[a].id + '').css('z-index', `${portfolio.length - (a - i)}`);
+            }
+            for (let a = i; a >= 0; --a){
+                $('#' + portfolio[a].id + '').css('z-index', `${portfolio.length - (i - a)}`);
+            }
+        }
+    }
 }
 function showModal() {
     // document.getElementById('floatingBox').classList.remove('hidden');
