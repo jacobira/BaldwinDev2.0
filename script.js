@@ -29,21 +29,25 @@ var portfolio = [{
         "basicDes":"Bacon ipsum hamhock",
         "id":"proj6"
     }
-    // ,
-    // {
-    //     "name":"Project 7",
-    //     "basicDes":"Bacon ipsum hamhock",
-    //     "id":"proj7"
-    // }
+    ,
+    {
+        "name":"Project 7",
+        "basicDes":"Bacon ipsum hamhock",
+        "id":"proj7"
+    }
 ];
 
 createPortfolioStack();
+
+function navigatePage() {
+    
+}
 
 function createPortfolioStack(){
     for(let i=0; i<portfolio.length; i++){
         let projectId = portfolio[i].id;
         $('#stackBox').append(`
-            <div class="project" id=${projectId} onmouseover="toTopOfStack('${projectId}')">
+            <div class="project" id=${projectId} onmouseover="toTopOfStack('${projectId}')" onclick="showModal()">
                 ${portfolio[i].name}
             </div>
         `);
@@ -112,3 +116,11 @@ function hideModal() {
     document.getElementById('floatingBox').style.display = 'none';
     document.getElementById('floatingBox').style.opacity = 0;
 }
+
+//     __  __  ____
+//    |  ||  ||    \
+//    |  ||  ||    /
+//    |  ||  ||    \
+// ___|  ||  ||     |
+// \_____||__||____/
+// https://github.com/jacobira
